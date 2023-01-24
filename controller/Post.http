@@ -1,0 +1,25 @@
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "Title": "new title",
+  "body": "another body"
+}
+
+
+###
+GET http://localhost:3000/posts
+
+###
+GET http://localhost:3000/posts/1
+
+###
+PUT http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+  "Title": "only update title"
+}
+
+###
+DELETE http://localhost:3000/posts/1
