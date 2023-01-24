@@ -78,7 +78,7 @@ func UpdatePost(c *gin.Context) {
 	})
 }
 
-func DelelePost(c *gin.Context) {
+func DeletePost(c *gin.Context) {
 	id := c.Param("id")
 	initializers.DB.Delete(&models.Post{}, id)
 	c.Status(200)

@@ -21,7 +21,7 @@ func main() {
 	r.GET("/posts", controller.PostsIndex)
 	r.GET("/posts/:id", controller.GetPost)
 	r.PUT("/posts/:id", controller.UpdatePost)
-	r.DELETE("/posts/:id", controller.DelelePost)
+	r.DELETE("/posts/:id", controller.DeletePost)
 
 	r.Run()
 }
